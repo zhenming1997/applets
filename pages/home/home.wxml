@@ -1,4 +1,5 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello Word</text>
 <button>按钮</button>
-<view>知识点1</view>
+<view>1.知识点1</view>
+<view>哈哈</view>

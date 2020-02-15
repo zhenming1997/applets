@@ -1,4 +1,7 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello Word</text>
-<button>按钮</button>
-<view>知识点1</view>
+<!-- 2.获取用户信息 -->
+<button open-type="getUserInfo" size="mini" bindgetuserinfo="getUserInfo">获取授权</button>
+<!-- 3.展示用户信息（不能获取到数据） -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>

@@ -1,7 +1,31 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/goods/goods"
   ],
-  "sitemapLocation": "sitemap99.json"
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#ff5777"
+  },
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "color": "#C5C1AA",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "分类",
+        "iconPath": "static/tabbar/category.png",
+        "selectedIconPath": "static/tabbar/category_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }

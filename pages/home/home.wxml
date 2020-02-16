@@ -1,4 +1,18 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello Word</text>
 <button>按钮</button>
-<view>知识点1</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>
+<view wx:for="{{list}}" wx:key="name">{{item.name}} -- {{item.age}}</view>

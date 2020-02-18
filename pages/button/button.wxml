@@ -13,6 +13,6 @@
 <!-- 点击时按钮的样式 -->
 <button size="mini" hover-class="pressed">按住时颜色不一样</button>
 <!-- 获取用户信息 -->
-<button open-type="getUserInfo" bindgetuserinfo="getUser">获取用户信息</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUser">点击获取用户信息</button>
 <text>用户名称:{{name}}\n</text>
 <image src="{{namePic}}"></image>

@@ -1,11 +1,11 @@
-// pages/home/home.js
+// pages/text/text.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    text: 'button组件'
+
   },
 
   /**
@@ -62,10 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  clibutton(){
-    this.setData({
-      text: 'new Data'
-    })
   }
 })

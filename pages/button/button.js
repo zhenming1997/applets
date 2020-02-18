@@ -1,18 +1,19 @@
-// pages/home/home.js
+// pages/button/button.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    text: 'button组件'
+    isloading: false,
+    name: null,
+    namePic: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+  
   },
 
   /**
@@ -63,9 +64,23 @@ Page({
   onShareAppMessage: function () {
 
   },
-  clibutton(){
+  loadingbtn(){
+    const _this = this
     this.setData({
-      text: 'new Data'
+      isloading: true
+    })
+    setTimeout(function(){
+      _this.setData({
+        isloading: false
+      })
+    },3000)
+    
+  },
+  getUser(use){
+    console.log(use)
+    this.setData({
+      name: use.detail.userInfo.nickName,
+      namePic: use.detail.userInfo.avatarUrl
     })
   }
 })

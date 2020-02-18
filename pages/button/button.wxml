@@ -1,0 +1,18 @@
+<!--pages/button/button.wxml-->
+<button>按钮</button>
+<!-- 1. size设置大小 -->
+<button size="mini">按钮</button>
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<!-- 镂空效果 -->
+<button size="mini" type="warn" plain>按钮</button>
+<!-- 是否可用 -->
+<button size="mini" disabled>按钮</button>
+<!-- loading效果 -->
+<button size="mini" loading="{{isloading}}" bindtap="loadingbtn">loading按钮</button>
+<!-- 点击时按钮的样式 -->
+<button size="mini" hover-class="pressed">按住时颜色不一样</button>
+<!-- 获取用户信息 -->
+<button open-type="getUserInfo" bindgetuserinfo="getUser">获取用户信息</button>
+<text>用户名称:{{name}}\n</text>
+<image src="{{namePic}}"></image>

@@ -1,0 +1,13 @@
+<!--pages/input/input.wxml-->
+<!-- 2 value-->
+<input value="值"></input>
+<!-- type决定键盘类型 英文字母+其他符号/身份证/数字 -->
+身份证：<input type="idcard"></input>
+<!-- password 明文暗文 -->
+密码：<input password></input>
+<!-- placeholder -->
+<input placeholder="请输入内容"></input>
+<!-- confirm-type -->
+键盘右下角按钮：<input type="text" confirm-type="登录"></input>
+<!-- 绑定事件 获取焦点 输入时 点击完成 -->
+绑定事件获取内容：<input bindinput="input" bindfocus="focus" bindblur="blur" bindconfirm="confirm"></input>

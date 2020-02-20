@@ -1,0 +1,19 @@
+/* pages/view/view.wxss */
+.vie{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+.hovervie{
+  background-color: blue;
+  color: white;
+  font-size: 25px;
+}
+.box{
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+}
+.boxclick{
+  background-color: black;
+}

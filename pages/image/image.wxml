@@ -1,0 +1,16 @@
+<!--pages/image/image.wxml-->
+<!-- 
+    1.image可以写成单标签，也可以写成双标签
+    2.图片默认大小320px * 240px
+    2.image是行内块级元素（inline-block）
+ -->
+ <!-- 本地图片-长按弹出小程序码菜单show-menu-by-longpress-->
+<image src="/static/b.jpg" show-menu-by-longpress/>
+<!-- 网络图片 -->
+<image src="http://img0.imgtn.bdimg.com/it/u=1025156358,3292768594&fm=26&gp=0.jpg"></image>
+<!-- 点击按钮上传图片本地或者拍照 -->
+<button bindtap="addPic">上传图片</button>
+<image src="{{picter}}"></image>
+<!-- bindload 图片加载完成 -->
+<view>------------------------------------</view>
+<image wx:for="{{5}}" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" bindload="picload" lazy-load></image>

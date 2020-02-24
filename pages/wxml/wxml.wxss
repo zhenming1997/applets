@@ -1,0 +1,7 @@
+/* pages/wxml/wxml.wxss */
+.datacolor1{
+  color: darkorchid;
+}
+.datacolor2{
+  color:red;
+}

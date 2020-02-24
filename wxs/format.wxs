@@ -1,0 +1,11 @@
+
+
+//时间格式化
+function dateFormat(date, format) {
+  var sum = date + format
+  return sum
+}
+
+module.exports = {
+  dateFormat:dateFormat
+}

@@ -1,0 +1,14 @@
+/* pages/wxss/wxss.wxss */
+@import './public/public.wxss';
+@import './public/weui-searchbar.wxss';
+.views{
+  width:100px;
+  height: 100px;
+  background-color: orange;
+}
+
+.views2{
+  width:200rpx;
+  height: 200rpx;
+  background-color:red;
+}

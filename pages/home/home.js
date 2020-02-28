@@ -1,11 +1,11 @@
-// pages/home/home.js
+-// pages/home/home.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    titles: ['衣服','裤子','鞋子']
   },
 
   /**
@@ -14,53 +14,31 @@ Page({
   onLoad: function (options) {
 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  inp(){
+    console.log('事件监听')
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handleTouchStart(e){
+    console.log('触摸时触发:',e)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handleTouchMove(e) {
+    console.log('按住移动时触发：',e)
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  handleTouchend(e) {
+    console.log('离开时触发:',e)
+  }, 
+  handleTap(e) {
+    console.log('按住迅速抬起（点击）触发：',e)
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  handleLongpress(e) {
+    console.log('长按时触发：',e)
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  handletapEventClick(event){
+    console.log(event)
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  handleTaps(e){
+    console.log(e)
+    const index = e.currentTarget.dataset.index
+    const name = e.currentTarget.dataset.item
+    console.log(index + '--' + name)
   }
 })

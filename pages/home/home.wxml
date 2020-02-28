@@ -1,4 +1,20 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello Word</text>
-<button>按钮</button>
-<view>知识点1</view>
+<button bindtap="inp" size="mini">bindtap按钮</button>
+<button catch:tap="inp" size="mini">chatchtap按钮</button>
+<!-- 常见事件 -->
+<view class="box" 
+bind:touchstart="handleTouchStart"
+bind:touchmove="handleTouchMove"
+bind:touchend="handleTouchend"
+bind:tap="handleTap"
+bind:longpress="handleLongpress"
+></view>
+
+<!-- 事件对象 -->
+<button size="mini" bind:tap="handletapEventClick">事件对象</button>
+<!-- 事件传递参数 -->
+<view class="container">
+<block  wx:for="{{titles}}" wx:key="item">
+  <view class="item" bind:tap="handleTaps" data-index="{{index}}" data-item="{{item}}">{{item}}</view>
+</block>
+</view>

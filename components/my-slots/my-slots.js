@@ -1,0 +1,33 @@
+// components/my-slots/my-slots.js
+Component({
+ options:{
+   multipleSlots: true
+ },
+ //监听组件在页面中的生命周期
+  pageLifetimes:{
+   show(){
+     console.log('组件在页面中显示')
+   },
+   hide(){
+     console.log('组件在页面中隐藏')
+   }
+ },
+ //监听组件本身
+  lifetimes:{
+   created(){
+     console.log('组件被创建出来')
+   },
+   attached(){
+     console.log('组件被添加到页面')
+   },
+   ready(){
+     console.log('组件被渲染出来')
+   },
+   moved(){
+     console.log('组件被移动到另外一个节点')
+   },
+   dettached(){
+     console.log('组件被')
+   }
+ }
+})

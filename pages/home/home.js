@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    num:0
   },
 
   /**
@@ -62,5 +62,23 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  handleIncrement(event){
+  console.log(event)
+   this.setData({
+     num:this.data.num+1
+   })
+  },
+  //tab 参数
+  tabClick(event){
+    console.log(event.detail.title)
+  },
+  //修改组件内的data
+  handleIncrementCpn(){
+    //通过ID或class拿到组件对象
+    const my_sel = this.selectComponent('#sel-id')
+    // console.log(my_sel)
+    //调用方法接口修改数据
+    my_sel.incrementCount(10);
   }
 })

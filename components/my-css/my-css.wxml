@@ -1,0 +1,3 @@
+<!--components/my-css/my-css.wxml-->
+<view class="title">我是css标题</view>
+<view class="content">我是css内容</view>

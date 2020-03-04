@@ -1,4 +1,34 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello Word</text>
 <button>按钮</button>
-<view>知识点1</view>
+<!-- 使用自定义组件 -->
+<!-- <my-cpn></my-cpn>-->
+<!-- <my-css/> -->
+
+<!-- 传递数据 -->
+<my-prop title="哈哈" titleclass="red"/>
+<my-prop title="呵呵" titleclass="green"/>
+<my-prop />
+
+<!-- 组件内部发出事件 -->
+<my-event bind:increment="handleIncrement"/>
+<view>当前计数:{{num}}</view>
+
+<!-- tab-control练习 -->
+<w-tab-control titles="{{['衣服','裤子','鞋子','帽子']}}" bind:itemClick="tabClick"/>
+
+<!-- 直接选中组件修改数据-组件内部数据 -->
+<button size="mini" bind:tap="handleIncrementCpn">修改组件内中data的数据</button>
+<my-sel id="sel-id"/>
+<view>------------------------------------</view>
+<!-- 插槽的使用 -->
+<my-slot>
+  <button>我是插槽的内容</button>
+</my-slot>
+<!-- 多个插槽的使用 -->
+<view>------------------------------------</view>
+<my-slots>
+<button size="mini" slot="slot2">我是插入的按钮</button>
+<slider slot="slot1" value="50"/>
+<text slot="slot3">哈哈哈</text>
+</my-slots>
